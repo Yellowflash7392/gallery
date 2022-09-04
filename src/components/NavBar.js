@@ -10,10 +10,14 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            Library
-            <i className="fas fa-code"></i>
-          </NavLink>
+          <div style={{"marginBottom":"70px"}} >
+            <NavLink exact to="/" className="nav-logo">
+              <p> Library</p>
+              <div className="search_box_div" >
+                <input className="search_box" type="text" placeholder="Search all photos" />
+              </div>
+            </NavLink>
+          </div>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -30,34 +34,45 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/architecture"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Architecture
+                💰Architecture
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/dummy"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
+                🏔 Kashmir
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/dummy"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Contact Us
+                ⛵️ Seaside
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/dummy"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                🐟 Lake view
               </NavLink>
             </li>
           </ul>

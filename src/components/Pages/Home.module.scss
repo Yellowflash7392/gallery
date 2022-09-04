@@ -1,0 +1,48 @@
+.today{
+    display: flex;
+    .today_left{
+        padding: 50px;
+        font-weight: 400;
+        font-size: 50px;
+        font-family: 'Cormorant Upright';
+        color: #2E8BFF;
+        .today_left_date{
+            font-size: 20px;
+            color: #6F7378;
+        }
+    }
+    .today_right{
+        display: block;
+        .today_right_img{
+            margin:20px
+        }
+    }
+    margin-bottom: 50px;
+}
+.this_week{
+    display: flex;
+    .this_week_left{
+        padding: 35px;
+        font-weight: 400;
+        font-size: 50px;
+        font-family: 'Cormorant Upright';
+        color: #2E8BFF;
+        white-space: nowrap;
+        .this_week_left_date{
+            font-size: 20px;
+            color: #6F7378; 
+        }
+    }
+    .this_week_right{
+        display: block;
+        .this_week_right_img{
+            margin:20px
+        }
+    }
+}
+.text{
+    color:white;
+    font-weight: 100;
+    font-size: 20px;
+    display: flex;
+}
